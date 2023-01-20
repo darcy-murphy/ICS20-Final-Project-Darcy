@@ -1,43 +1,32 @@
-
-
-// Copyright (c) 2020 Mr. Coxall All rights reserved
+// Copyright (c) 2022 Timothy Manwell All rights reserved
 //
-// Created by: Darcy Murphy
+// Created by: Timothy Manwell
 // Created on: Nov 2022
 // This file contains the JS functions for index.html
 
 /**
  * Check servie worker.
  */
- if (navigator.serviceWorker) {
-  navigator.serviceWorker.register(
-    "/ICS2O-Unit5-01/sw.js",
-    {
-      scope:"/ICS2O-Unit5-01/",
-    }
-  )
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICS2O-Unit5-02/sw.js", {
+    scope: "/ICS2O-Unit5-02/",
+  })
 }
+
+const randomNumberPos = Math.floor(Math.random() * 6) + 1
+const randomNumberNeg = Math.floor(Math.random() * -6) + 1
 
 /**
- * This function displays the slider value.
+ * This function displays positive and negative number
  */
 function myButtonClicked() {
-  document.getElementById("slider-value").innerHTML =
-    "<p>Value is: " + slider.value + "</p>"
-}
+  buttonOnChecked = document.getElementById("flash1").checked
 
-const randomNumber = Math.floor(Math.random() * 6) + 1
-
-/** 
- * This function updates the slider value.
- */
-function updateSliderValue(valueFromSlider) {
-  document.getElementById("slider-value").innerHTML = valueFromSlider
-  document.getElementById("answer").innerHTML =
-    "The answer was, " + randomNumber + "!" + " You got it! Good job."
-  
-    // block of code to be executed if conditional is true
-  if (valueFromSlider != randomNumber) 
-    document.getElementById("answer").innerHTML = 
-    "The answer was, " + randomNumber + " !" + " Nice guess, but try again."
+  if (buttonOnChecked == true) {
+    document.getElementById("radio-button-value").innerHTML =
+      "Your random number is: " + randomNumberPos + "."
+  } else {
+    document.getElementById("radio-button-value").innerHTML =
+      "Your random number is: " + randomNumberNeg + "."
   }
+}
