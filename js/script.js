@@ -19,21 +19,7 @@ if (navigator.serviceWorker) {
 /**
  * This function updates the slider value.
  */
-function updateSliderValue(valueFromSlider) {
-  document.getElementById("slider-value").innerHTML = valueFromSlider
-}
-
-/**
- * This function displays the slider value.
- */
-function myButtonClicked() {
-  buttonOnChecked = document.getElementById('flash1').checked
-
-  if (buttonOnChecked == true) {
-    document.getElementById("radio-button-value").innerHTML =
-    "<p>You got Heads</p>"
-  } else {
-    document.getElementById("radio-button-value").innerHTML =
-    "<p>Value is: Off</p>"
-  }
-}
+alert("The computer chose: " + k); 
+var things = ['Heads', 'Tails', ];
+var thing = things[Math.floor(Math.random()*things.length)];
+alert('The computer chose:' + thing);
