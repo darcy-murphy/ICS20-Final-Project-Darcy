@@ -58,34 +58,19 @@
         <p></p>
         <img src="./images/notebook-animation.svg" alt="Computer" />
         <p>Coin Flipper!</p>
+        <div id="radio-button-value">
+          ?
+        </div>
         <div id="radio-buttons">
-          <label
-            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-            for="flash1"
-          >
-            <input
-              checked
-              class="mdl-radio__button"
-              id="flash1"
-              name="flash"
-              type="radio"
-              value="on"
-            />
-            <span class="mdl-radio__label">Heads</span>
-          </label>
-          <label
-            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-            for="flash2"
-          >
-            <input
-              class="mdl-radio__button"
-              id="flash2"
-              name="flash"
-              type="radio"
-              value="off"
-            />
-            <span class="mdl-radio__label">Tails</span>
-          </label>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="flash1">
+              <input checked class="mdl-radio__button" id="flash1" name="flash" type="radio"
+               value="on">
+              <span class="mdl-radio__label">Always on</span>
+            </label>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="flash2">
+              <input class="mdl-radio__button" id="flash2" name="flash" type="radio" value="off">
+              <span class="mdl-radio__label">Always off</span>
+            </label>
         </div>
         <div>
           <!-- Raised button with ripple -->
@@ -95,8 +80,10 @@
           >
             Show Value
           </button>
-          <div id="radio-button-value">Your random number is: .</div>
         </div>
+        <!-- basic text -->
+        <p></p>
+        <div id="hello-world"></div>
       </main>
     </div>
   </body>
