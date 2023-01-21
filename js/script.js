@@ -8,18 +8,23 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register(
-    "/ICS2O-Unit5-01-HTML-Slider-Example/sw.js",
-    {
-      scope: "/ICS2O-Unit5-01-HTML-Slider-Example/",
-    }
-  )
+  navigator.serviceWorker.register("/ICS2O-Final-Project-Justin-Allen/sw.js", {
+    scope: "/ICS2O-Final-Project-Justin-Allen/",
+  })
 }
 
-/**
- * This function updates the slider value.
- */
-alert("The computer chose: " + k); 
-var things = ['Heads', 'Tails', ];
-var thing = things[Math.floor(Math.random()*things.length)];
-alert('The computer chose:' + thing);
+;("use strict")
+
+const Heads = 1
+const Tails = 2
+
+
+function updateSliderValue(valueFromSlider) {
+  document.getElementById("slider-value").innerHTML = valueFromSlider
+}
+
+function myButtonClicked() {
+  var other = ""
+  var random = Math.floor(Math.random() * 3) + 1
+  var paperSelected = document.getElementById("paper").checked
+  var rockSelected = document.getElementById("rock").checked
