@@ -15,16 +15,11 @@ if (navigator.serviceWorker) {
 
 ;("use strict")
 
-const Heads = 1
-const Tails = 2
-
-
-function updateSliderValue(valueFromSlider) {
-  document.getElementById("slider-value").innerHTML = valueFromSlider
-}
-
 function myButtonClicked() {
-  var other = ""
-  var random = Math.floor(Math.random() * 3) + 1
-  var paperSelected = document.getElementById("paper").checked
-  var rockSelected = document.getElementById("rock").checked
+  var c = "Rock";
+  var d = "Paper";
+  var e = "Scissors";
+  var thing = window['cde'.charAt(Math.floor(Math.random()*3))];
+  document.write('The computer chose: ' + thing);
+  
+}
