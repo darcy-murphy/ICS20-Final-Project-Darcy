@@ -10,9 +10,8 @@
  */
 
 var canvas = document.getElementById("myCanvas");
-if(canvas.getContext) {
-    var context = canvas.getContext("2d");
-}
+var c = canvas.getContext("2d");
+
 
 var W = canvas.clientWidth;
 var H = canvas.clientHeight;
