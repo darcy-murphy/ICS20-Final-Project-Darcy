@@ -8,7 +8,7 @@
  * This function displays "Hello, World!".
  * 
  */
-var canvas= document.getElementById("myCanvas");
+var canvas = document.getElementById("myCanvas");
 var c = canvas.getContext('2d');
 var W = canvas.clientWidth;
 var H = canvas.clientHeight;
