@@ -10,7 +10,7 @@
  */
 var canvas = document.getElementById("myCanvas");
 var c = canvas.getContext('2d');
-
+flipCoin(c);
 var W = canvas.clientWidth;
 var H = canvas.clientHeight;
 
