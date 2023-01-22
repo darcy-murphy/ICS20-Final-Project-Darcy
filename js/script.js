@@ -8,3 +8,16 @@
  * This function displays "Hello, World!".
  * 
  */
+var canvas= document.getElementById("myCanvas");
+var c = canvas.getContext('2d');
+var W = canvas.clientWidth;
+var H = canvas.clientHeight;
+
+function flipCoin()
+{
+var flip = Math.floor(Math.random() * 2)
+console.log(flip);
+
+
+
+}
