@@ -8,9 +8,12 @@
  * This function displays "Hello, World!".
  * 
  */
+
 var canvas = document.getElementById("myCanvas");
-var c = canvas.getContext('2d');
-flipCoin(c);
+if(canvas.getContext) {
+    var context = canvas.getContext("2d");
+}
+
 var W = canvas.clientWidth;
 var H = canvas.clientHeight;
 
