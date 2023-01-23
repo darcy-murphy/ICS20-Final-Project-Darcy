@@ -31,6 +31,8 @@ drawHeads(200, 200, "Gold");
 }
 function drawHeads(xLoc, yLoc, color)
 {
+  c.clearRect(0, 0, W, H);
+  
   c.beginPath();
   c.fillStyle = color;
   c.strokeStyle = "Black"
@@ -44,6 +46,8 @@ function drawHeads(xLoc, yLoc, color)
   c.fillText("H", xLoc, yLoc);
 }
 function drawTails(xLoc, yLoc, color){
+  c.clearRect(0, 0, W, H); 
+
   c.beginPath();
   c.fillStyle = color;
   c.strokeStyle = "Black"
