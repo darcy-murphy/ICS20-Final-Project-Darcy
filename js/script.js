@@ -2,7 +2,7 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This file contains the JS functions for index.html
+// This file contains The JS functions for index.html
 
 /**
  * This function displays "Hello, World!".
