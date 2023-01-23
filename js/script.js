@@ -9,8 +9,8 @@
  * 
  */
 
-const canvas = document.getElementById("myCanvas");
-const c = canvas.getContext('2d');
+var canvas = document.getElementById("myCanvas");
+var c = canvas.getContext("2d");
 
 
 var W = canvas.clientWidth;
